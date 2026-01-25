@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>habilidades Digitales - Cursos y Formación Online</title>
+
+<!-- Importar la fuente Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- 
+======================================================================
+                 PEGA TU PÍXEL DE META (FACEBOOK) AQUÍ
+           Solo reemplaza 'CAMBIAR_AQUI_ID_DE_PIXEL' por tu ID.
+======================================================================
+-->
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'CAMBIAR_AQUI_ID_DE_PIXEL'); // <-- REEMPLAZA ESTA ID
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=CAMBIAR_AQUI_ID_DE_PIXEL&ev=PageView&noscript=1" // <-- REEMPLAZA ESTA ID
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- 
+======================================================================
+              PEGA TU GOOGLE ANALYTICS (GA4) AQUÍ
+           Solo reemplaza 'CAMBIAR_AQUI_ID_DE_GA4' por tu ID.
+======================================================================
+-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=CAMBIAR_AQUI_ID_DE_GA4"></script> <!-- <-- REEMPLAZA ESTA ID -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'CAMBIAR_AQUI_ID_DE_GA4'); // <-- REEMPLAZA ESTA ID
+</script>
+<!-- 
+======================================================================
+                    FIN DE SCRIPTS DE SEGUIMIENTO
+======================================================================
+-->
+
+<style>
+/* --- VARIABLES GLOBALES --- */
+:root {
+  --color-principal: #0066cc;
+  --color-secundario: #007bff;
+  --color-fondo: #f9fafc;
+  --color-texto: #333;
+  --sombra: 0 3px 10px rgba(0,0,0,0.1);
+  --sombra-tarjeta: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* --- ESTILOS GENERALES --- */
+body {
+  font-family: "Segoe UI", "Poppins", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.7;
+}
+
+/* --- SECCIÓN HERO (PANTALLA COMPLETA) --- */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(270deg, #0077ff, #00c4cc, #0077ff);
+  background-size: 600% 600%;
+  animation: gradientMove 12s ease infinite;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
+.hero-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.hero-section h3 {
+  font-weight: 400;
+  max-width: 700px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.hero-section h3 p {
+  margin: 15px 0;
+}
+
+@keyframes gradientMove {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* --- BLOQUES DE INTRODUCCIÓN --- */
+.intro-block {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+.intro-block h2 {
+  color: var(--color-secundario);
+  margin: 0 0 30px 0;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.4;
+}
+.intro-block p {
+  margin-bottom: 15px;
+}
+.intro-block .intro-list {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  list-style: none; 
+  margin: 20px 0;
+  padding-left: 20px;
+}
+.intro-block .intro-list li {
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+.intro-block .highlight {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-secundario);
+  margin-top: 20px;
+}
+.intro-block .cta-button-wrapper {
+  text-align: center;
+  margin: 35px 0;
+}
+.intro-block .cta-button {
+  background: var(--color-secundario);
+  color: #fff;
+  padding: 16px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+.intro-block .cta-button:hover {
+  background: #0056b3;
+}
+.intro-block .signature {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+/* --- CONTENEDOR PRINCIPAL DE CURSOS --- */
+.pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ENCABEZADO DE CURSOS */
+.encabezado {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: linear-gradient(135deg, #0066cc, #00b4d8);
+  color: #fff;
+  border-radius: 0 0 25px 25px;
+  margin: 20px 0; 
+}
+.encabezado h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.encabezado img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.encabezado p {
+  font-size: 1.1em;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.boton-principal {
+  display: inline-block;
+  margin-top: 20px;
+  background: #fff;
+  color: var(--color-principal);
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--sombra);
+}
+.boton-principal:hover {
+  background: #f0f0f0;
+}
+
+/* CATEGORÍAS ACORDEÓN */
+.categorias {
+  padding: 25px 10px;
+}
+
+.categoria {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  margin: 20px 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.categoria-header {
+  background: var(--color-principal);
+  color: #fff;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.categoria-header::after {
+  content: "▾";
+  font-size: 1.3em;
+  transition: transform 0.3s ease;
+}
+.categoria.cerrada .categoria-header::after {
+  transform: rotate(-90deg);
+}
+
+.categoria-contenido-wrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 20px;
+}
+
+.categoria-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: minmax(0, auto);
+  gap: 25px;
+  padding: 20px 0 0 0;
+}
+
+/* TARJETAS DE CURSO */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--sombra-tarjeta);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: 180px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #eee; 
+}
+.card h3 {
+  margin: 10px 0;
+  color: var(--color-principal);
+  font-size: 1.1em;
+  min-height: 44px; 
+}
+.card p {
+  color: #555;
+  font-size: 0.9em;
+  margin-bottom: 12px;
+  flex-grow: 1; 
+}
+.boton {
+  display: inline-block;
+  background: var(--color-principal);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.boton:hover {
+  background: #0055aa;
+}
+
+/* BOTÓN CERRAR CATEGORÍA */
+.cerrar-btn {
+  display: block;
+  width: 100%;
+  background: #f2f2f2;
+  color: var(--color-principal);
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  grid-column: 1 / -1; 
+}
+.cerrar-btn:hover {
+  background: #e0e0e0;
+}
+
+/* PIE DE PÁGINA */
+.pie {
+  text-align: center;
+  padding: 30px 20px;
+  color: #777;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
+  margin-top: 30px;
+  /* Dejamos espacio para el banner de cookies flotante */
+  padding-bottom: 120px; 
+}
+.pie a {
+  color: var(--color-principal);
+  text-decoration: none;
+}
+.pie a:hover {
+  text-decoration: underline;
+}
+
+/* --- BANNER DE COOKIES (FLOTANTE - SEGURO PARA META ADS) --- */
+#cookie-banner {
+  position: fixed;
+  /* 1.5rem (aprox 24px) desde abajo */
+  bottom: 1.5rem; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%; 
+  max-width: 1200px; 
+  
+  background-color: rgba(33, 33, 33, 0.95);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* Estilos de flotación */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border-radius: 10px; 
+
+  flex-wrap: wrap;
+  gap: 15px;
+  box-sizing: border-box;
+}
+#cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+  flex-grow: 1;
+  max-width: 800px;
+  line-height: 1.5;
+  text-align: left;
+}
+#cookie-banner button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  flex-shrink: 0; 
+}
+#cookie-banner button:hover {
+  background-color: #45a049;
+}
+
+/* --- ESTILOS RESPONSIVOS --- */
+@media (max-width: 768px) {
+  .intro-block {
+    padding: 25px;
+    margin: 20px auto;
+  }
+  .intro-block h2 {
+    font-size: 22px;
+  }
+  .encabezado h1 { font-size: 1.6em; }
+  .categoria-header { font-size: 1em; padding: 14px; }
+  
+  #cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    bottom: 1rem;
+    width: 90%;
+  }
+  #cookie-banner p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2em;
+  }
+  .hero-section h3 {
+    font-size: 1em;
+  }
+  .intro-block .cta-button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+  <!-- SECCIÓN 1: HERO -->
+  <section class="hero-section">
+<h1>🌍 Habilidades</h1>
+<h3>
+  <p><strong>Habilidades</strong> es una plataforma de carácter <strong>informativo</strong> que reúne contenidos sobre <strong>aprendizaje digital</strong>, <strong>emprendimiento</strong> y <strong>desarrollo personal</strong>.</p>
+
+  <p>Funciona como un <strong>directorio orientativo</strong> que describe distintos <strong>sistemas digitales</strong> y recursos disponibles en plataformas externas.</p>
+
+  <p>En este sitio <strong>no se realizan pagos ni transacciones</strong>. Los enlaces redirigen a <strong>plataformas de terceros</strong>, cuyo uso es de <strong>exclusiva responsabilidad del usuario</strong>. Algunos enlaces pueden tener <strong>carácter patrocinado</strong> y este sitio <strong>podría recibir una comisión</strong> si el usuario realiza una compra, <strong>sin costo adicional</strong> para el usuario.</p>
+</h3>
+  <a href="#categorias-cursos" 
+     class="boton-principal" 
+     style="display:inline-block; margin-top:20px; margin-bottom:70px; padding:12px 25px; background:#fff; color:#0077ff; border-radius:30px; font-weight:bold; text-decoration:none;">
+     Ver Categorías
+  </a>
+</section>
+
+ </section>
+
+  <!-- SECCIÓN 2: INTRO BLOQUE 1 (TEXTO SEGURO) -->
+  </div>
+
+  <div class="intro-block">
+<h2>📘 Aprender y desarrollarse comienza con una decisión informada</h2>
+
+<p>El desarrollo personal y profesional es un proceso continuo que puede abordarse desde distintos ámbitos, como la adquisición de nuevas habilidades, la actualización de conocimientos o la mejora del bienestar general.</p>
+
+<p>Una de las herramientas más utilizadas hoy es el <strong>aprendizaje de habilidades aplicables</strong>, que permite comprender mejor el entorno digital y las oportunidades disponibles.</p>
+
+<p>En este espacio se presenta una recopilación de <strong>recursos educativos online</strong>, accesibles de forma remota y pensados para que cada persona avance según su propio ritmo e intereses.</p>
+
+<p>La información aquí expuesta busca facilitar la exploración de alternativas formativas y apoyar la toma de decisiones conscientes respecto al aprendizaje.</p>
+</div>
+
+<!-- SECCIÓN 3: INTRO BLOQUE 2 (LISTA) -->
+<div class="intro-block" style="max-width: 600px;">
+  <p>El aprendizaje digital permite recordar que <strong>siempre es posible comenzar o retomar un proceso formativo</strong>, utilizando las herramientas disponibles en línea.</p>
+
+  <p>Actualmente, muchas personas acceden a formación desde sus hogares, complementando su experiencia y conocimientos.</p>
+    
+    <ul class="intro-list">
+      <li>🌟 <strong>Explora nuestras categorías:</strong></li>
+      <li>🎓 Educación Profesional</li>
+      <li>🌱 Hogar, Jardinería y Vida Natural</li>
+      <li>💄 Belleza, Maquillaje y Moda</li>
+      <li>🧠 Desarrollo Personal y Mentalidad</li>
+      <li>🧘‍♀️ Nutrición, Bienestar y Espiritualidad</li>
+      <li>💻 Ventas Online y E-commerce</li>
+      <li>🎨 Diseño, Animación y Creatividad Digital</li>
+      <li>🐶 Cuidado y Bienestar Animal</li>
+      <li>🧰 Programación y Tecnología Digital</li>
+      <li>💼 Negocios, Marketing y Criptomonedas</li>
+      <li>🎭 Arte, Manualidades y Emprendimiento Creativo</li>
+      <li>💰 Finanzas Personales</li>
+    </ul>
+
+<p>Cada categoría está organizada para presentar <strong>habilidades y conocimientos relevantes en el contexto actual</strong>, permitiendo comprender cómo se aplican en distintos ámbitos.</p>
+
+<p><em></em><br>
+Al explorar estos contenidos, es posible identificar aprendizajes que pueden incorporarse progresivamente según los intereses y objetivos personales.</p>
+
+<p class="highlight">El aprendizaje es un proceso personal y gradual.</p>
+
+<p style="text-align:center; margin-top:10px; font-weight:600;">
+Información para explorar y decidir con criterio.
+</p>
+</div>
+
+<!-- SECCIÓN 4: INTRO BLOQUE 3 (ENFOQUE INFORMATIVO) -->
+<div class="intro-block" style="max-width: 640px;">
+  <h2>📌 El desarrollo personal y profesional comienza con una decisión informada</h2>
+
+  <p>Existen múltiples alternativas de formación disponibles en entornos digitales, cada una con enfoques, metodologías y alcances distintos.</p>
+
+  <p>En esta plataforma se reúne una <strong>selección informativa de cursos y certificaciones online</strong> disponibles en paginas externas, con el fin de facilitar su revisión y accs3so.</p>
+
+  <p>Este espacio funciona como un <strong>punto de referencia</strong> para quienes desean conocer opciones para ampliar habilidades, actualizar conocimientos o explorar nuevas áreas de interés.</p>
+
+  <p class="highlight" style="font-size: 18px; margin: 30px 0;">
+    El momento y el ritmo del aprendizaje<br>son definidos por cada persona.
+  </p>
+
+  <div class="cta-button-wrapper">
+    <a href="#categorias-cursos" class="cta-button">🔗 Ver recursos disponibles</a>
+  </div>
+
+  <p class="signature">
+    Orientación para el aprendizaje digital,<br>
+    <strong>Habilidades</strong><br>
+    Plataforma de carácter informativo
+  </p>
+</div>
+
+  <!-- SECCIÓN 5: CONTENEDOR PRINCIPAL DE CURSOS (TEXTO SEGURO) -->
+  <div class="pagina">
+
+    <!-- ENCABEZADO DE CURSOS -->
+    <header class="encabezado" id="categorias-cursos">
+      <h1>🌍 Habilidades</h1>
+      <div>
+        <!-- IMAGEN REEMPLAZADA POR PLACEHOLDER -->
+<img src="imagenes/lv_0_20251104132035.gif" 
+     alt="Cursos de Impulsa Digital" 
+     style="width: 100%; max-width: 1200px; height: auto; border-radius: 10px; display: block; margin: 0 auto;">
+      </div>
+      </p>
+      <a href="#categorias" class="boton-principal">Categorías</a>
+    </header>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="categorias">
+
+      <!-- Educación y Capacitación Profesional -->
+      <div class="categoria cerrada">
+        <div class="categoria-header">🎓 Educación Profesional</div>
+        <div class="categoria-contenido-wrapper">
+          <div class="categoria-contenido">
+            <div class="card">
+              <!-- IMAGEN REEMPLAZADA -->
+              <img src="imagenes/IMG-20250923-WA0015.jpg" alt="Curso Prevención" style="max-width: 100%; height: auto; border-radius: 10px;">
+              <h3>Certificación en Prevención de Riesgos Biológicos Ambientales</h3>
+              <p>Autor: Instituto Superior ISE</p>
+              <a href="https://go.hotmart.com/S76588248G" class="boton">Informacion y acceso en plataforma externa</a>
+            </div>
+            <div class="card">
+              <!-- IMAGEN REEMPLAZADA -->
+              <img src="imagenes/IMG-20250923-WA0014.jpg" alt="Curso Biología Marina" style="max-width: 100%; height: auto; border-radius: 10px;">
+              <h3>Capacitación en Biología Marina</h3>
+              <p>Instituto Superior ISE.</p>
+              <a href="https://go.hotmart.com/A69084679X" class="boton">Informacion y acceso en plataforma externa</a>
+            </div>
+            <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+          </div>
+        </div>
+      </div>
+    <!-- Hogar, Jardineria y Vida Natural -->
+    <div class="categoria cerrada">
+      <div class="categoria-header">🌱 Hogar, Jardineria y Vida Natural</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20250923-WA0003.jpg" alt="Curso Suculentas" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso Online Sobre el Cultivo de Suculentas</h3>
+        <p>El arte de cultivar SUCULENTAS con  Alejandra Sisco
+Experta en Suculentas y Emprendimiento</p>
+        <a href="https://go.hotmart.com/C51813670Q" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0033.jpg" alt="Curso Huertos Organicos" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso de Huertos Organicos en Casa</h3>
+        <p>Autor: Luis GADSET</p>
+        <a href="https://go.hotmart.com/F52143623V?ap=b687" class="boton">Comprar Ahora</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+      </div>
+    </div>
+
+    <!-- Belleza, Maquillaje y Moda-->
+    <div class="categoria cerrada">
+      <div class="categoria-header"> 💄 Belleza, Maquillaje y Moda</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0011.jpg" alt="Curso Automaquillaje" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso de Automaquillaje Profesional </h3>
+        <p>Glow Makeup Academy</p>
+        <a href="https://go.hotmart.com/X52144527T" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20250923-WA0001.jpg" alt="Curso costura premium" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>CURSO COSTURA PREMIUM C.P.</h3>
+        <p>Autor: Premium Academy®</p>
+        <a href="https://go.hotmart.com/R51718573Y" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20250923-WA0002.jpg" alt="Curso online" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso de Automaquillaje Avanzado</h3>
+        <p>Sara Maldonado</p>
+        <a href="https://go.hotmart.com/J51813536K" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+      </div>
+    </div>
+
+    <!-- Desarrollo Personal y Mentalidad -->
+    <div class="categoria cerrada">
+      <div class="categoria-header"> 🧠 Desarrollo Personal y Mentalidad</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20250923-WA0011.jpg" alt="Curso metodo de riqueza" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>MÉTODO RIQUEZA (Adquiere Educación Financiera y lleva tu vida a Otro Nivel) </h3>
+        <p>Autor: Valentina Lopez</p>
+        <a href="https://go.hotmart.com/Q52215206D" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251007-WA00023.jpg" alt="Pack Libros" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>ULTRAPACK DE DESARROLLO PERSONAL Miles de libros, audiocursos y herramientas mentales para despertar tu espíritu emprendedor, mejorar tus ventas y alcanzar tus metas.Acceso inmediato.  Sin mensualidades.  Resultados reales.</h3>
+        <p>Desbloquea Tu Potencial y Transforma Tu Mente con Ultrapack más poderoso de desarrollo personal comienza hoy mismo tu camino al éxito!</p>
+        <a href="https://go.hotmart.com/P102288345N?dp=1" class="boton">Acceder</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+      </div>
+    </div>
+    <!-- Ebook , Nutrición y Bienestar -->
+    <div class="categoria cerrada">
+      <div class="categoria-header">🧘 Nutrición, Bienestar y Espiritualidad</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-202510088-WA0001.jpg" alt="Ebook de Nutricion extraordinaria" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Ebook de NUTRICIÓN Extraordinaria
+</h3>
+        <p>Autor: FRANCISCO JOSE DE LA FUENTE JAMBRINA</p>
+        <a href="https://go.hotmart.com/P102304482W" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0012.jpg" alt="Ebook 200 recetas keto" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>200 recetas keto es un libro electrónico el cual te permite tener todas las recetas en tu celular, tableta o PC.</h3>
+        <p>Autor: A.P. Digital</p>
+        <a href="https://go.hotmart.com/B51720266J" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0014.jpg" alt="Ebook Recetas"style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Ebook Sistema diabetes reingenieria corporal</h3>
+        <p>Autor: Info Servicios Digitales</p>
+        <a href="https://go.hotmart.com/L51719512G" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0034.jpg" alt="Curso Masaje terapeutico" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>CURSO DE MASAJE TERAPÉUTICO Y DESCONTRACTURANTE</h3>
+        <p>Autor: Learning Academy</p>
+        <a href="https://go.hotmart.com/C102210449R" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0036.jpg" alt="Curso Debloquea tu cuerpo" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Desbloquea tu Cuerpo</h3>
+        <p>Creador:Servicios Digitales</p>
+        <a href="https://go.hotmart.com/Q52144832N?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20250923-WA00125.jpg" alt="Diplomatura Reiki" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Diplomatura en Reiki- nivel 1- nivel 2- nivel 3- Maestría</h3>
+        <p>Autor: Instituto Superior ISE</p>
+        <a href="https://go.hotmart.com/L54611419P" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>        
+      </div>
+    </div>    
+    <!-- Ventas Online, E-commerce -->
+    <div class="categoria cerrada">
+      <div class="categoria-header">💻 Ventas Online, E-commerce</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20251012-WA0031.jpg" alt="Curso Ecommerce"style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Aprende E-Commerce de manera Profesional Paso a Paso y de forma segura
+</h3>
+        <p>ESCUELA VIRTUAL-PLATAFORMA ONLINE</p>
+        <a href="https://go.hotmart.com/U102162046T?ap=177e" class="boton">Acceder</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251012-WA0007.jpg" alt="Ventas en Instagram" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Capacitacion en Neuromarketing, Copywriting, Embudos de Venta y Marketing de Contenidos para Instagram.</h3>
+        <p>Monetización y Ventas en Instagram (por Instamaster)</p>
+        <a href="https://go.hotmart.com/K52134745W" class="boton">Informacion y acceso en plataforma externa</a>        
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251008-WA0000.jpg" alt="Guia Amazon FBA" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Guía Amazon FBA para Principiantes </h3>
+        <p>Crea tu propio negocio online sobre Amazon FBA paso a paso</p>
+        <a href="https://go.hotmart.com/S102304416N" class="boton">Informacion y acceso en plataforma externa</a>        
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251002-WA0023.jpg" alt="Video escribe para novatos" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Como Vender más con Meta Ads para Inmobiliarios
+</h3>
+        <p>Autor: Aldair Rojas</p>
+        <a href="https://go.hotmart.com/X102218735C?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>        
+      </div>
+    </div>
+    <!-- Diseño, Animación y Creatividad Digital -->
+    <div class="categoria cerrada">
+      <div class="categoria-header"> 🎨 Diseño y Creatividad Digital</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0021.jpg" alt="Video escribe para novatos" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso 100% Práctico Animación VideoScribe para Novatos</h3>
+        <p>Autor: Leonardo Romero</p>
+        <a href="https://go.hotmart.com/A52152574S?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251012-WA0018.jpg" alt="Pack diseños editables" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Crea anuncios que vendan, edita plantillas de archivos  con imágenes ganadoras y úsalos para vender tus productos o servicios</h3>
+        <p>Pack de Diseños para #RedesSociales</p>
+        <a href="https://go.hotmart.com/E52144850U?dp=1" class="boton">Informacion y acceso en plataforma externa</a>  
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+      </div>
+    </div>
+    <!--  Cuidado y Bienestar Animal -->
+    <div class="categoria cerrada">
+      <div class="categoria-header"> 🐶 Cuidado y Bienestar Animal</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0023.jpg" alt="CURSO mi mascota" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Bienestar y salud de mi Mascota
+</h3>
+        <p>Autor: Learning Online</p>
+        <a href="https://go.hotmart.com/T102208024M" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251011-WA0003.jpg" alt="Curso Adiestramiento" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Formadogs - Educación canina sin castigos.</h3>
+        <p>Autor: Rubén González</p>
+        <a href="https://go.hotmart.com/I52151731U" class="boton">Informacion y acceso en plataforma externa</a>  
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+      </div>   
+    </div>
+    <!-- Programacion,Tecnología y Herramientas Digitales -->
+    <div class="categoria cerrada">
+      <div class="categoria-header">💻 Programacion y Tecnología </div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0029.jpg" alt="Creacion IA"style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Crea tu agente con inteligencia artificial desde 0
+</h3>
+        <p>Autor: Cursos online y Servicios de Suscripción</p>
+        <a href="https://go.hotmart.com/S102301230F" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251012-WA0000.jpg" alt="Curso Programacion"  style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso Java para Todos Aprende Programación de Forma Fácil y Divertida</h3>
+        <p>Autor:Luis Estrella Reynoso</p>
+        <a href="https://go.hotmart.com/J102199302W" class="boton">Informacion y acceso en plataforma externa</a>              
+          </div>          
+          <div class="card">
+        <img src="imagenes/IMG-20251010-WA0022.jpg" alt="Video escribe para novatos" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Apps Rentables con AdMob plataforma oficial de Google para poner anuncios dentro de aplicaciones móviles
+</h3>
+        <p>ESCUELA VIRTUAL-PLATAFORMA ONLINE</p>
+        <a href="https://go.hotmart.com/M52136391Q?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251012-WA0229.jpg" alt="Curso Programacion" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Nova 3 Sistema automatizado para ser utilizado en la plataforma Metatrader 5 programado para trabajar con scalping.</h3>
+        <p>Tradersoftwares-Automatic trading System</p>
+        <a href="https://go.hotmart.com/U52152452J?dp=1" class="boton">Acceder</a>          
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251012-WA0019.jpg" alt="Punto de ventas" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Sistema de Facturacion e Inventario Excel Ente, El mejor Punto de Ventas en Excel.</h3>
+        <p>Empieza a facturar como un profesional</p>
+        <a href="https://go.hotmart.com/H102218498T?ap=b8b6" class="boton">Acceder</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>        
+      </div>
+    </div>
+    <!--  FINANZAS PERSONALES -->
+    <div class="categoria cerrada">
+      <div class="categoria-header">🎓 FINANZAS PERSONALES</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20250930-WA0006.jpg" alt="Curso Finanzas" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso Finanzas personales</h3>
+        <p>Capacita Tu Éxito</p>
+        <a href="https://go.hotmart.com/H102185207W" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251001-WA0041.jpg" alt="Curso Finazas" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>CURSO FINANZAS PERSONALES</h3>
+        <p>Escuela de Postgrados de España y Andragogy Autonomus University</p>
+        <a href="IMG-20251011-WA0003.jpg" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>
+      </div>
+    </div>
+    <!-- Arte y manualidades Emprendimiento Creativo -->
+    <div class="categoria cerrada">
+      <div class="categoria-header">🎨 Emprendimiento Creativo</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20251011-WA0001(1).jpg" alt="Diseña Resina" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>DISEÑA Y CREA CON RESINA, una experiencia transformadora que desbloqueará tu creatividad
+</h3>
+        <p>Arte y Resina</p>
+        <a href="https://go.hotmart.com/A101934134J?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/resina.jpg" alt="Curso Resina" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Curso de Pisos, Mesas, Encimeras con Resina Epoxica.</h3>
+        <p>Autor: Jose Yair Ruiz Gordillo</p>
+        <a href="https://go.hotmart.com/K101994073K" class="boton">Informacion y acceso en plataforma externa</a>        
+          </div>
+        </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>        
+      </div>
+    </div>
+    <!-- Negocios, Marketing y Ventas Estratégicas Criptomonedas / Blockchain -->
+    <div class="categoria cerrada">
+      <div class="categoria-header"> 💼 Negocios, Algoritmos Estrategicos, Marketing de Afiliados y Criptomonedas</div>
+      <div class="categoria-contenido-wrapper">
+        <div class="categoria-contenido">
+          <div class="card">
+        <img src="imagenes/IMG-20250923-WA0005.jpg" alt="Guia Instagram"  style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Los 12 secretos para crecer orgánicamente en Instagram.</h3>
+        <p>Algoritmo de Instagram-Marketing Ingenioso</p>
+        <a href="https://go.hotmart.com/X52143857K" class="boton">Informacion y acceso en plataforma externa</a>        
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251011-WA0000.jpg" alt="Diplomado Smart" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Diplomado Smart</h3>
+        <p>Autor: Andres Coello Lopez</p>
+        <a href="https://go.hotmart.com/D102162641G?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251011-WA0004.jpg" alt="Ebook Criptomonedas" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>Guía Práctica de Inversión en Criptomonedas – De Cero a Estratega Cripto</h3>
+        <p>Ebook visual e intuitivo.</p>
+        <a href="https://go.hotmart.com/J102162849C?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+          <div class="card">
+        <img src="imagenes/IMG-20251011-WA0005.jpg" alt="Curso Pro afiliados" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <h3>¡PRO Afiliados-Sistema de Riqueza 2.0</h3>
+        <p>Institucion de Formacion Marketing de Afiliados</p>
+        <a href="https://go.hotmart.com/R52216644H?dp=1" class="boton">Informacion y acceso en plataforma externa</a>
+          </div>
+        <button class="cerrar-btn">⬆️ Cerrar categoría</button>        
+    </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Aquí puedes añadir tus otras categorías copiando y pegando la estructura -->
+
+    </section>
+
+  </div> <!-- Fin de .pagina -->
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <p>&copy; 2026 Habilidades.cl  Todos los derechos reservados.</p>
+    <p>
+      <a href="legal/aviso-legal.html" target="_blank">Aviso Legal</a> | 
+      <a href="legal/politica-privacidad.html" target="_blank">Política de Privacidad</a> | 
+      <a href="legal/terminos.html" target="_blank">Términos y Condiciones</a> | 
+    <a href="legal/politica-cookies.html" target="_blank">Política de Cookies</a>
+
+    </p>
+  <p>
+Este sitio tiene un propósito exclusivamente informativo. Su función es presentar, organizar y referenciar recursos educativos desarrollados y gestionados por terceros.
+</p>
+
+<p>
+La información publicada no constituye formación impartida directamente por este sitio, ni representa asesoría profesional, certificación o garantía de resultados.
+</p>
+
+<p>
+Los contenidos, cursos y materiales mencionados son responsabilidad de sus respectivos autores o proveedores. Este sitio no participa en la creación, ejecución de dichos contenidos.
+</p>
+
+<p>
+El acceso a recursos externos queda sujeto a las condiciones, términos y políticas definidas por cada proveedor.
+</p>
+  </footer>
+
+  <!-- BANNER DE COOKIES (FLOTANTE - SEGURO) -->
+  <div id="cookie-banner" style="display:none;">
+    <p>
+      Este sitio utiliza cookies para mejorar su experiencia de navegación, personalizar contenido y analizar el tráfico. Al hacer clic en "Aceptar", usted consiente el uso de cookies.
+    </p>
+    <button id="accept-cookies">Aceptar</button>
+  </div>
+
+
+  <!-- SCRIPTS (MOVIDOS AL FINAL) -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // --- Lógica del Acordeón ---
+    document.querySelectorAll('.categoria-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const categoria = header.parentElement;
+        const wrapper = categoria.querySelector('.categoria-contenido-wrapper');
+        const estaCerrada = categoria.classList.contains('cerrada');
+
+        categoria.classList.toggle('cerrada');
+        if (estaCerrada) {
+          wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+        } else {
+          wrapper.style.maxHeight = 0;
+        }
+      });
+    });
+
+    // --- Lógica del Botón Cerrar ---
+    document.querySelectorAll('.cerrar-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const categoria = e.target.closest('.categoria');
+        const wrapper = categoria.querySelector('.categoria-contenido-wrapper');
+        categoria.classList.add('cerrada');
+        wrapper.style.maxHeight = 0;
+        categoria.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    // --- Lógica del Banner de Cookies (NO INTRUSIVO) ---
+    const banner = document.getElementById('cookie-banner');
+    const button = document.getElementById('accept-cookies');
+
+    // Mostrar banner solo si no se aceptaron cookies
+    if (!localStorage.getItem('cookiesAccepted')) {
+      banner.style.display = 'flex';
+    }
+
+    // Al aceptar cookies
+    button.addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      banner.style.display = 'none';
+    });
+  });
+  </script>
+
+</body>
+</html>
