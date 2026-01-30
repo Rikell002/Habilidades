@@ -56,6 +56,9 @@
 -->
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 /* --- VARIABLES GLOBALES --- */
 :root {
   --color-principal: #0066cc;
@@ -487,21 +490,22 @@ body {
 
   <p>Actualmente, muchas personas acceden a formación desde sus hogares, complementando su experiencia y conocimientos.</p>
     
-    <ul class="intro-list">
-      <li>🌟 <strong>Explora nuestras categorías:</strong></li>
-      <li>🎓 Educación Profesional</li>
-      <li>🌱 Hogar, Jardinería y Vida Natural</li>
-      <li>💄 Belleza, Maquillaje y Moda</li>
-      <li>🧠 Desarrollo Personal y Mentalidad</li>
-     <li>💻 Ventas Online y E-commerce</li>
-      <li>🎨 Diseño, Animación y Creatividad Digital</li>
-      <li>🐶 Cuidado y Bienestar Animal</li>
-      <li>🧰 Programación y Tecnología Digital</li>
-      <li>💼 Negocios, Marketing y Criptomonedas</li>
-      <li>🎭 Arte, Manualidades y Emprendimiento Creativo</li>
-      <li>💰 Finanzas Personales</li>
-    </ul>
+  <ul class="intro-list">
+  <li>🌟 <strong>Explora nuestras categorías:</strong></li>
 
+  <li><a href="#educacion">🎓 Educación Profesional</a></li>
+  <li><a href="#jardineria">🌱 Hogar, Jardinería y Vida Natural</a></li>
+  <li><a href="#belleza">💄 Belleza, Maquillaje y Moda</a></li>
+  <li><a href="#desarrollo">🧠 Desarrollo Personal y Mentalidad</a></li>
+  <li><a href="#e-commerce">💻 Ventas Online y E-commerce</a></li>
+  <li><a href="#diseño">🎨 Diseño y Creatividad Digital</a></li>
+  <li><a href="#animal">🐶 Cuidado y Bienestar Animal</a></li>
+  <li><a href="#programacion">💻 Programación y Tecnología Digital</a></li>
+  
+  <li><a href="#finanzas">💰 Finanzas Personales</a></li>
+ <li><a href="#creativo">🎭 Emprendimiento Creativo</a></li>
+<li><a href="#negocios">💼 Negocios y Criptomonedas</a></li>
+</ul>
 <p>Cada categoría está organizada para presentar <strong>habilidades y conocimientos relevantes en el contexto actual</strong>, permitiendo comprender cómo se aplican en distintos ámbitos.</p>
 
 <p><em></em><br>
@@ -559,7 +563,7 @@ Información para explorar y decidir con criterio.
     <section id="categorias" class="categorias">
 
       <!-- Educación y Capacitación Profesional -->
-      <div class="categoria cerrada">
+    <div id="educacion" class="categoria cerrada">
         <div class="categoria-header">🎓 Educación Profesional</div>
         <div class="categoria-contenido-wrapper">
           <div class="categoria-contenido">
@@ -582,7 +586,7 @@ Información para explorar y decidir con criterio.
         </div>
       </div>
     <!-- Hogar, Jardineria y Vida Natural -->
-    <div class="categoria cerrada">
+    <div id="jardineria" class="categoria cerrada">
       <div class="categoria-header">🌱 Hogar, Jardineria y Vida Natural</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -605,7 +609,7 @@ Experta en Suculentas y Emprendimiento</p>
     </div>
 
     <!-- Belleza, Maquillaje y Moda-->
-    <div class="categoria cerrada">
+    <div id="belleza" class="categoria cerrada">
       <div class="categoria-header"> 💄 Belleza, Maquillaje y Moda</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -633,7 +637,7 @@ Experta en Suculentas y Emprendimiento</p>
     </div>
 
     <!-- Desarrollo Personal y Mentalidad -->
-    <div class="categoria cerrada">
+    <div id="desarrollo" class="categoria cerrada">
       <div class="categoria-header"> 🧠 Desarrollo Personal y Mentalidad</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -655,7 +659,7 @@ Experta en Suculentas y Emprendimiento</p>
    
     </div>    
     <!-- Ventas Online, E-commerce -->
-    <div class="categoria cerrada">
+    <div id="e-commerce" class="categoria cerrada">
       <div class="categoria-header">💻 Ventas Online, E-commerce</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -690,7 +694,7 @@ Experta en Suculentas y Emprendimiento</p>
       </div>
     </div>
     <!-- Diseño, Animación y Creatividad Digital -->
-    <div class="categoria cerrada">
+    <div id="diseño" class="categoria cerrada">
       <div class="categoria-header"> 🎨 Diseño y Creatividad Digital</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -711,7 +715,7 @@ Experta en Suculentas y Emprendimiento</p>
       </div>
     </div>
     <!--  Cuidado y Bienestar Animal -->
-    <div class="categoria cerrada">
+    <div id="animal" class="categoria cerrada">
       <div class="categoria-header"> 🐶 Cuidado y Bienestar Animal</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -733,7 +737,7 @@ Experta en Suculentas y Emprendimiento</p>
       </div>   
     </div>
     <!-- Programacion,Tecnología y Herramientas Digitales -->
-    <div class="categoria cerrada">
+   <div id="programacion" class="categoria cerrada">
       <div class="categoria-header">💻 Programacion y Tecnología </div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -774,7 +778,7 @@ Experta en Suculentas y Emprendimiento</p>
       </div>
     </div>
     <!--  FINANZAS PERSONALES -->
-    <div class="categoria cerrada">
+   <div id="finanzas" class="categoria cerrada">
       <div class="categoria-header">🎓 FINANZAS PERSONALES</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -795,7 +799,7 @@ Experta en Suculentas y Emprendimiento</p>
       </div>
     </div>
     <!-- Arte y manualidades Emprendimiento Creativo -->
-    <div class="categoria cerrada">
+    <div id="creativo" class="categoria cerrada">
       <div class="categoria-header">🎨 Emprendimiento Creativo</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
@@ -817,7 +821,7 @@ Experta en Suculentas y Emprendimiento</p>
       </div>
     </div>
     <!-- Negocios, Marketing y Ventas Estratégicas Criptomonedas / Blockchain -->
-    <div class="categoria cerrada">
+    <div id="negocios" class="categoria cerrada">
       <div class="categoria-header"> 💼 Negocios, Algoritmos Estrategicos, Marketing de Afiliados y Criptomonedas</div>
       <div class="categoria-contenido-wrapper">
         <div class="categoria-contenido">
