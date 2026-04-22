@@ -608,10 +608,15 @@ Información para explorar y decidir con criterio.
   </p>
 
 
-<a href="https://go.hotmart.com/F105167912U" class="boton compartir-btn">📲 Compartir</a>
+
+
+<a href="https://go.hotmart.com/F105167912U" class="boton compartir-btn" onclick="compartirCurso(event)">
+  📲 Compartir
 
 
 
+
+</a>
 
 
 </div>
@@ -1954,7 +1959,28 @@ El acceso a recursos externos queda sujeto a las condiciones, términos y polít
       banner.style.display = 'none';
     });
   });
-  </script>
+ 
+<script>
+function compartirCurso(e) {
+  e.preventDefault();
+
+  const url = "https://go.hotmart.com/F105167912U";
+  const texto = "Mira este curso recomendado 👇";
+
+  if (navigator.share) {
+    navigator.share({
+      title: "Curso recomendado",
+      text: texto,
+      url: url
+    });
+  } else {
+    // Fallback (WhatsApp)
+    const whatsappURL = "https://wa.me/?text=" + encodeURIComponent(texto + " " + url);
+    window.open(whatsappURL, "_blank");
+  }
+}
+
+ </script>
 
 </body>
 </html>
