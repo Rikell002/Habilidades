@@ -1958,62 +1958,27 @@ El acceso a recursos externos queda sujeto a las condiciones, términos y polít
  
 </script>
 <script>
-function compartirCurso(e) {
-  e.preventDefault();
+function compartirCurso(event) {
+  event.preventDefault();
 
-  const url = "https://hotm.io/eybEc1n";
-  const texto = " 🎓✨ Formación recomendada a través de Habilidades.cl
+  const link = event.currentTarget.getAttribute("data-link");
 
-📊🤖 Excel, Power BI y Copilot con Inteligencia Artificial (2026)
+  const texto = `🎓✨ Formación recomendada a través de Habilidades.cl
 
-¿Quieres dominar Excel y destacar profesionalmente? Este curso completo es para ti:
+📚 Curso online con acceso completo
 
-📚 Aprenderás:
-• Excel desde básico hasta experto
-• Tablas dinámicas, fórmulas y automatización
-• Macros y VBA desde cero
-• Power BI para análisis de datos
-• Uso de IA y Copilot para optimizar tareas
+🚀 Mejora tus habilidades y oportunidades laborales
 
-💡 Lograrás:
-• Analizar datos como un profesional
-• Crear dashboards impactantes
-• Automatizar procesos y ahorrar tiempo
-• Prepararte para certificación Microsoft
+👉 Accede aquí:
+${link}
 
-🎥 Incluye:
-• +1000 videos paso a paso
-• Plantillas editables
-• Acceso a múltiples versiones de Excel
-• Certificado al finalizar
+💡 Si conoces a alguien a quien le pueda servir, compártele este recurso`;
 
-🎁 BONOS:
-• Curso de Word y PowerPoint
-• Matemáticas y lógica
-• Simuladores de certificación
-• Guía de IA aplicada a Excel
+  const url = "https://wa.me/?text=" + encodeURIComponent(texto);
 
-🌍 Acceso desde cualquier dispositivo
-
-🚀 Mejora tus oportunidades laborales y lleva tus habilidades al siguiente nivel
-
-
-💡 Si conoces a alguien a quien le pueda servir, compártele este recurso 
-
-Mira este curso recomendado 👇";
-
-  if (navigator.share) {
-    navigator.share({
-      title: "Curso recomendado",
-      text: texto,
-      url: url
-    });
-  } else {
-    // Fallback (WhatsApp)
-    const whatsappURL = "https://wa.me/?text=" + encodeURIComponent(texto + " " + url);
-    window.open(whatsappURL, "_blank");
-  }
+  window.open(url, "_blank");
 }
+
 
  </script>
 
