@@ -96,7 +96,7 @@ body {
 
 /* --- SECCIÓN HERO (PANTALLA COMPLETA) --- */
 .hero-section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +106,7 @@ body {
   background: linear-gradient(270deg, #0077ff, #00c4cc, #0077ff);
   background-size: 600% 600%;
   animation: gradientMove 12s ease infinite;
-  padding: 0 20px;
+  padding: 80px 20px;
   box-sizing: border-box; 
 }
 .hero-section h1 {
@@ -120,8 +120,9 @@ body {
   font-size: 1.1em;
   line-height: 1.6;
 }
-.hero-section h3 p {
-  margin: 15px 0;
+.hero-section p {
+  max-width: 700px;
+  margin: 10px auto;
 }
 
 @keyframes gradientMove {
@@ -471,7 +472,9 @@ body {
   <!-- SECCIÓN 1: HERO -->
   <section class="hero-section">
 <h1>🌍 Habilidades</h1>
-<h3><p><strong>Habilidades</strong> es una plataforma informativa sobre aprendizaje digital, emprendimiento y desarrollo personal. Funciona como un directorio orientativo que reúne recursos en plataformas externas, como cursos, programas, comunidades de acompañamiento, libros y contenidos especializados.</p>
+
+<h3>
+ <strong>Habilidades</strong> es una plataforma informativa sobre aprendizaje digital, emprendimiento y desarrollo personal. Funciona como un directorio orientativo que reúne recursos en plataformas externas, como cursos, programas, comunidades de acompañamiento, libros y contenidos especializados.</h3>
 
 <p>Los recursos son de duración flexible y están enfocados en habilidades específicas. A diferencia de carreras de larga duración, pueden completarse en pocos meses o al ritmo de cada usuario.</p>
 
